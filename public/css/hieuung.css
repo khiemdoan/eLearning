@@ -1,0 +1,35 @@
+.dangnhap{
+	padding-top: 100px;
+	padding-left: 300px;
+	padding-right: 300px;
+}
+.marketing .col-lg-4{
+	padding-top: 100px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.footer{
+	background-color:#c7ed6f;
+	width: 100%;
+	height: 120px;
+	text-align: center;
+}
+.lienhe{
+	padding-top: 15px;
+	color: #c910c9;
+	font-size: 200%;
+}
+.icon{
+	margin-left: 20px;
+
+}
+.đlienhe{
+	font-size: 150%;
+	padding-top: 5px;
+}
+.dangki{
+	padding-top: 100px;
+}
+.infor{
+	padding-bottom: 5px;
+}
