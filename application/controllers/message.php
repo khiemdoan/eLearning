@@ -75,9 +75,10 @@ class Message extends Framework\Controller {
 			if ($user_id != '') {
 				$this->load_model('lecture_model');
 				$lectures = $this->models['lecture_model']->find_lecture($subject);
+				var_dump($lectures);
 				if (!empty($lectures)) {
-					$lecture = $lectures[0];
-					$this->models['messages_model']->create($lecture, $name);
+					$lecture_id = $lectures[0]['id'];
+					$this->models['messages_model']->create($lecture_id, $name);
 				} else {
 					 $this->session->set_flashdata('message', '<div class="alert alert-danger">Chưa có môn học này trong cơ sở dữ liệu!</div>');
 				}
