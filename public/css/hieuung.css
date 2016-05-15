@@ -33,3 +33,122 @@
 .infor{
 	padding-bottom: 5px;
 }
+footer .divider {
+    width: 100%;
+    background-color: #B8BDB9;
+    height: 17px;
+    position: absolute;
+    top: 0;
+}
+footer h3 {
+    color: #fff;
+}
+footer h4 {
+    color: #3A5A99;
+    margin: 20px 0 15px;
+}
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+footer ul li {
+    margin-bottom: 10px;
+}
+footer, footer a {
+    color: #B6B6B6!important;
+}footer, footer a {
+    color: #B6B6B6!important;
+}
+
+footer {
+	margin-top: 100px;
+    background-color: #1c1c1c;
+    padding: 50px 0 0!important;
+    position: relative;
+}
+ul li {
+    list-style: none;
+}
+ul{
+	padding: 0;
+}
+footer input {
+    width: 100%;
+    border: none;
+    background-color: #242424;
+    outline: none;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+footer form {
+    padding-right: 23%;
+}
+footer textarea {
+    width: 100%;
+    border: none;
+    background-color: #242424;
+    outline: none;
+    height: 80px;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    resize: none;
+}
+.right {
+    float: right;
+}
+footer button {
+    border: none;
+    background-color: #242424;
+    padding: 7px 20px;
+}
+footer .square {
+    display: inline-block;
+    background-color: #242424;
+    width: 40px;
+    height: 40px;
+    padding: 6px 12px;
+    font-size: 19px;
+    margin-right: 5px;
+}
+.footer_bot {
+    background-color: #131313;
+    height: 55px;
+    padding-top: 2px;
+    margin-top: 70px;
+}
+.footer_bot h2 {
+    font-size: 13px;
+    color: #787878;
+}
+@media (min-width: 768px){
+	.navbar {
+	    border-radius: 0px;
+	}
+}
+#content-group,#content-class{
+	resize: none;
+    width: 100%;
+    outline: none;
+    font-size: 11px;
+    border-color: #ddd;
+}
+#log-group,#log-class{
+	position: relative;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-top: 0px;
+    height: 300px;
+    width: 100%;
+    overflow: auto;
+}
+.bh_label{
+	background-color: #BAD87A;
+	border: 1px solid #ddd;
+	border-bottom: 0px;
+    display: block;
+    margin: 0;
+    padding: 3px 6px;
+    font-size: 13px;
+}

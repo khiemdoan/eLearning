@@ -1,22 +1,14 @@
 <div class="col-md-2">
+	<label class="bh_label">Group chat</label>
 	<div id="log-group" class="conversation"></div>
-	<textarea id="content-group"></textarea>
+	<textarea id="content-group" placeholder="Type here ..."></textarea>
 </div><!-- /.col-md-2 -->
 
 <div class="col-md-2">
+	<label class="bh_label">Class chat</label>
 	<div id="log-class" class="conversation"></div>
-	<textarea id="content-class"></textarea>
+	<textarea id="content-class" placeholder="Type here ..."></textarea>
 </div><!-- /.col-md-2 -->
-
-<style>
-.conversation {border-radius:5px;
-        margin-top:10px;
-		padding:5px;
-		border: 1px solid gray;
-        height:300px;
-		width:100%;
-		overflow:auto; }
-</style>
 
 <script>
 var group_id = <?php echo(isset($group_chat_id) ? $group_chat_id : 0)?>;

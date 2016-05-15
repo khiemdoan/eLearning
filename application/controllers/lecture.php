@@ -23,12 +23,12 @@ class Lecture extends Framework\Controller {
 			$lecture = $lectures[0];
 			
 			$data['class_chat_id'] = $lecture_id;
-			$data['group_chat_id'] = 'none'; 
+			$data['group_chat_id'] = '"none"'; 
 			
 			if ($user_id != '') {
 				$this->load_model('users_model');
 				if ($this->models['users_model']->get_permission($user_id) != 'teacher') {
-					echo 'huhu';
+					echo '';
 					$message_id = $this->models['messages_model']->get_message_id($lecture_id, $user_id);
 					if (!empty($message_id)) {
 						$data['group_chat_id'] = $message_id[0]['message_id'];
@@ -38,7 +38,7 @@ class Lecture extends Framework\Controller {
 			
 			$data['title'] = $lecture['name'];
 			$this->load_view('template/header', $data);
-			$this->load_view('lecture/1', $data);
+			$this->load_view('lecture/' . $lecture_id, $data);
 			$this->load_view('lecture/chartarea', $data);
 			$this->load_view('template/footer', $data);
 		} else {
