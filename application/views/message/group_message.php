@@ -1,3 +1,12 @@
+<?php
+if (isset($class_name)) {
+	echo '<b>Lớp: ' . $class_name . '</b>';
+}
+?>
+
+<br>
+<br>
+
 <div class="col-md-2">
 	<div id="log-group" class="conversation"></div>
 	<textarea id="content-group"></textarea>

@@ -25,6 +25,7 @@ class Message extends Framework\Controller {
 		}
 		
 		$data['group_chat_id'] = $message_id;
+		$data['class_name'] = $this->models['messages_model']->get_class_name_by_id($message_id);
 		
 		$this->load_view('template/header', $data);
         $this->load_view('message/group_message', $data);

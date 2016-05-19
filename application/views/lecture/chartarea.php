@@ -1,5 +1,5 @@
 <div class="col-md-2">
-	<label class="bh_label">Group chat</label>
+	<label class="bh_label">Team chat</label>
 	<div id="log-group" class="conversation"></div>
 	<textarea id="content-group" placeholder="Type here ..."></textarea>
 </div><!-- /.col-md-2 -->

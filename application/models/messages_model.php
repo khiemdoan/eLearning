@@ -69,4 +69,14 @@ class Messages_Model extends Framework\Model {
         $sql = 'SELECT users.username FROM users, user_in_message WHERE users.user_id = user_in_message.user_id AND user_in_message.message_id = '.$message_id;
         return $this->database->get($sql);
     }
+	
+	public function get_class_name_by_id($id) {
+		$this->database->select(array('message_id', 'name'));
+        $this->database->from('messages');
+		$this->database->where('message_id', '=', $id);
+        $a = $this->database->get();
+		if (!empty($a)) {
+			return $a[0]['name'];
+		}
+	}
 }
